@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>proxy实现数据reactive</title>
+</head>
+<body>
+  proxy实现数据reactive
+  <div id="app"></div>
+  <button id="btn">点击</button>
+  <script src="./vue3.js"></script>
+  
+  <script>
+    const root = document.getElementById('app');
+    const btn = document.getElementById('btn');
+    var o = {
+      name : 'demo',
+      age:1
+    }
+    const obj = reactive(o)
+    const double = computed(() =>{
+      return obj.age*2
+    })
+
+    effect ( () => {
+      // 数据变了，响应式执行这里的代码fn
+      // fn会包装一层格式，方便判断computed, effect
+      root.innerHTML = `<h1>${obj.name}岁数是${obj.age}，乘以2的倍数是${double.value}</h1>`
+    })
+
+    btn.addEventListener('click', ()=>{
+      // 只操作js对象，引起dom变化
+      obj.age+=1
+    }, false)
+  </script>
+</body>
+</html>

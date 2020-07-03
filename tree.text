@@ -1,0 +1,52 @@
+.
+├── demo.html
+├── demo.js
+├── demo.ts
+├── grammar.js
+├── grammar.ts
+├── index.ts
+├── lib.ts
+├── tree.text
+├── vite-demo
+│   ├── index.html
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── public
+│   │   └── favicon.ico
+│   └── src
+│       ├── App.vue
+│       ├── assets
+│       │   └── logo.png
+│       ├── components
+│       │   └── HelloWorld.vue
+│       ├── index.css
+│       └── main.js
+├── vue-next-webpack-preview
+│   ├── README.md
+│   ├── index.html
+│   ├── package.json
+│   ├── src
+│   │   ├── App.vue
+│   │   ├── logo.png
+│   │   └── main.js
+│   ├── webpack.config.js
+│   └── yarn.lock
+└── vuecli-vue3-demo
+    ├── README.md
+    ├── babel.config.js
+    ├── lerna.json
+    ├── package-lock.json
+    ├── package.json
+    ├── packages
+    ├── public
+    │   ├── favicon.ico
+    │   └── index.html
+    └── src
+        ├── App.vue
+        ├── assets
+        │   └── logo.png
+        ├── components
+        │   └── HelloWorld.vue
+        └── main.js
+
+13 directories, 36 files
